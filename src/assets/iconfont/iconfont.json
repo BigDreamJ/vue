@@ -1,0 +1,149 @@
+{
+  "id": "1507753",
+  "name": "BigJ",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "BigJ",
+  "glyphs": [
+    {
+      "icon_id": "11736970",
+      "name": "airline",
+      "font_class": "airline",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "11736971",
+      "name": "alarm-clock",
+      "font_class": "alarm-clock",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "11736972",
+      "name": "app",
+      "font_class": "app",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "11736973",
+      "name": "camera",
+      "font_class": "camera",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "11736974",
+      "name": "biaozun",
+      "font_class": "biaozun",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "11736975",
+      "name": "assignment",
+      "font_class": "assignment",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "11736976",
+      "name": "card",
+      "font_class": "card",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "11736977",
+      "name": "class",
+      "font_class": "class",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "11736978",
+      "name": "direction",
+      "font_class": "direction",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "11736979",
+      "name": "chat",
+      "font_class": "chat",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "11736980",
+      "name": "cloud",
+      "font_class": "cloud",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "11736981",
+      "name": "detection",
+      "font_class": "detection",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "11736982",
+      "name": "car",
+      "font_class": "car",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "11736983",
+      "name": "cup",
+      "font_class": "cup",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "11736984",
+      "name": "download",
+      "font_class": "download",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "11736985",
+      "name": "document",
+      "font_class": "document",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "11736986",
+      "name": "email",
+      "font_class": "email",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "11736987",
+      "name": "discipline",
+      "font_class": "discipline",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "11737046",
+      "name": "password",
+      "font_class": "password",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "11737047",
+      "name": "view",
+      "font_class": "view",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    }
+  ]
+}
