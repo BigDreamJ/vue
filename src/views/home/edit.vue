@@ -191,7 +191,9 @@
         data.append('file', fileInput.files[0])
         api.upload(data).then(res => {
           if (res) {
-            this.editor.insertEmbed(this.editor.getSelection().index, 'image', 'api' +  res.location.split(":")[1] + res.newName)
+            //this.editor.insertEmbed(this.editor.getSelection().index, 'image', 'api' +  res.location.split(":")[1] + res.newName)   windows下
+            let location =  res.location.split("/");
+            this.editor.insertEmbed(this.editor.getSelection().index, 'image', 'api/pic/' +  location[location.length - 2] + '/' + res.newName)
           }
         })
       }
