@@ -3,9 +3,11 @@
     <el-container>
       <el-aside :width=size :style="{backgroundImage:'url(' + picPath + ')'}">
         <div class="title">
-          <el-avatar :size="150" :src= headPath style="cursor:pointer;margin-top: 300px" @click.native="change" @error="errorHandler">
+          <div class="head">
+          <el-avatar :size="150" :src= headPath style="cursor:pointer;"  @click.native="change" @error="errorHandler">
             <img src="https://cube.elemecdn.com/e/fd/0fc7d20532fdaf769a25683617711png.png"/>
           </el-avatar>
+          </div>
         </div>
       </el-aside>
 
@@ -83,10 +85,18 @@
   }
 
   .title{
+    text-align: center;
     background-repeat:no-repeat;
     /*background-size:100% 100%;*/
     -moz-background-size:100% 100%;
     height: calc(100vh);
     background-color: rgba(0, 0, 0, .34);
+    .head{
+      position: relative;
+      top: 30%;
+      -webkit-transform: translateY(-50%); //表示针对 safari 浏览器支持
+      -ms-transform: translateY(-50%);  //表示针对 IE 浏览器支持
+      transform: translateY(-50%);
+    }
   }
 </style>

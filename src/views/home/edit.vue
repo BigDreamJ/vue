@@ -204,7 +204,9 @@
 
 <style rel="stylesheet/scss" lang="scss">
   .edit{
+
     .card{
+      overflow-y:auto;
       height: calc(100vh - 200px);
       .send{
         margin-top: 50px;
