@@ -6,7 +6,6 @@ import newBlog from '@/views/home/newBlog'
 import edit from '@/views/home/edit'
 import show from '@/views/home/show'
 import amap from '@/views/home/amap'
-const loginpage = resolve => require(['@/views/login'],resolve)
 const indexpage = resolve => require(['@/views/home/index'],resolve)
 
 Vue.use(Router)
@@ -23,16 +22,6 @@ let router =  new Router({
       name :'index',
       meta:{index:1,title: '主页'},
       component:indexpage
-    },
-    {
-      path:'/login',
-      name :'login',
-      component:loginpage
-    },
-    {
-      path:'/home',
-      name :'home',
-      component:home
     },
     {
       path:'/newBlog',

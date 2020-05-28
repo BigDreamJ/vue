@@ -13,7 +13,8 @@ module.exports = {
     // proxyTable: {},
     proxyTable: {     //axios跨域处理
       '/api': {       //此处并非和url一致
-        target:'http://10.111.60.228:8085',
+        // target:'http://10.111.60.228:8085',
+        target:'http://localhost:8085',
         changeOrigin:true, //允许跨域
         pathRewrite:{
           '^/api': '/'

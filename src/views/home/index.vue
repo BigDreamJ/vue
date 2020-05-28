@@ -1,35 +1,35 @@
 <template>
   <div class="index">
-      <div class="main">
-          <div class="content" v-for="(item,i) in blogContent.records">
-            <el-card class="box-card" shadow="hover">
-              <div slot="header" class="clearfix">
+    <div class="main">
+      <div class="content" v-for="(item,i) in blogContent.records">
+        <el-card class="box-card" shadow="hover">
+          <div slot="header" class="clearfix">
                 <span>
 <!--                  <el-link target="/show" :underline="false" :title="item.title"><h1>{{item.title}}</h1></el-link>-->
-                <router-link :to="{path:'show', query:{blogId: item.id}}" style="float: left;font-size: 14px;width: 900px;"><h1>{{item.title}}</h1></router-link>
+                <router-link :to="{path:'show', query:{blogId: item.id}}" style="float: left;font-size: 14px;width: 80%;"><h1>{{item.title}}</h1></router-link>
                   <div style="float: right">
                 <el-button type="primary" round @click="edit(item.id)">编辑</el-button>
                     <el-button type="danger" round @click="remove(item)">删除</el-button>
                   </div>
                 </span>
-<!--                <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>-->
-<!--                <img class="star" style="float: right;width: 50px; height: 50px;" src="../../assets/star.png" />-->
-              </div>
-              <div style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;text-align: left ">
-                <a href="#" :title="item.title" style="text-decoration:none;color: #222222">{{item.content}}</a>
-              </div>
-            </el-card>
+            <!--                <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>-->
+            <!--                <img class="star" style="float: right;width: 50px; height: 50px;" src="../../assets/star.png" />-->
           </div>
-          <el-pagination
-            @size-change="handleSizeChange"
-            @current-change="handleCurrentChange"
-            :current-page="page.pageNum"
-            :page-sizes="[10, 20, 50, 100]"
-            :page-size="page.pageSize"
-            layout="total, sizes, prev, pager, next, jumper"
-            :total="blogContent.total">
-          </el-pagination>
+          <div style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap;text-align: left ">
+            <a href="#" :title="item.title" style="text-decoration:none;color: #222222">{{item.content}}</a>
+          </div>
+        </el-card>
       </div>
+      <el-pagination
+        @size-change="handleSizeChange"
+        @current-change="handleCurrentChange"
+        :current-page="page.pageNum"
+        :page-sizes="[10, 20, 50, 100]"
+        :page-size="page.pageSize"
+        layout="total, sizes, prev, pager, next, jumper"
+        :total="blogContent.total">
+      </el-pagination>
+    </div>
   </div>
 </template>
 
@@ -123,31 +123,31 @@
     background-repeat:no-repeat;
     background-size:100% 100%;
     -moz-background-size:100% 100%;}
-    .main {
-      /*background-color: rgba(0,0,0,0.5);*/
-      text-align: center;
-      height: calc(100vh - 198px);
-      overflow-y:scroll;
-      .content {
-        margin: 0 auto;
-        /*border: 1px solid;*/
-        border-radius: 2px;
-        width: 60%;
+  .main {
+    /*background-color: rgba(0,0,0,0.5);*/
+    text-align: center;
+    height: calc(100vh - 198px);
+    overflow-y:scroll;
+    .content {
+      margin: 0 auto;
+      /*border: 1px solid;*/
+      border-radius: 2px;
+      width: 80%;
 
-        .box-card {
-          /*width: 920px;*/
-          margin-bottom: 10px;
+      .box-card {
+        /*width: 920px;*/
+        margin-bottom: 10px;
 
-          .clearfix:before,
-          .clearfix:after {
-            display: table;
-            content: "";
-          }
+        .clearfix:before,
+        .clearfix:after {
+          display: table;
+          content: "";
+        }
 
-          .clearfix:after {
-            clear: both
-          }
+        .clearfix:after {
+          clear: both
         }
       }
     }
+  }
 </style>

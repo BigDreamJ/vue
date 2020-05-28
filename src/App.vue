@@ -60,7 +60,7 @@
       },
       change(){
         if(this.size == "100%"){
-          this.size = "15%";
+          this.size = "160px";
           this.show = true;
         }else {
           this.size = "100%";

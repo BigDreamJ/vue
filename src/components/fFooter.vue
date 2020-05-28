@@ -1,6 +1,6 @@
 <template>
     <div class="fFooter">
-      哈哈哈哈哈哈
+      <h6 style="margin-top: 20px">滇ICP备20002586号</h6>
     </div>
 </template>
 
